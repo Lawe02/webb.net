@@ -1,0 +1,13 @@
+﻿@page
+@model HockeySajt.Pages.RandomModel
+@{
+    string x = "litet tal";
+    if (@Model.RandomNumber > 200000)
+        x = "Väldigt stort tal";
+    else if(@Model.RandomNumber > 100000)
+        x = "Ganska stort tal";
+}
+<h3>@x</h3> 
+<p>@Model.Time</p>
+
+
