@@ -1,0 +1,11 @@
+﻿@page
+@model HockeySajt.Pages.NewsModel
+@{
+}
+
+<h1>Artiklar</h1>
+@foreach(var artikel in @Model.list)
+{
+   <h2>@artikel.Name</h2>
+   <h3>@artikel.Description</h3>
+}
