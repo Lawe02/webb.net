@@ -9,13 +9,11 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-<table>
+<ul>
     @foreach(var player in Model.Player)
     {
-        <tr>
-            <td>@player.Name</td>
-            <td>@player.Team</td>
-            <td>@player.Id</td>
-        </tr>
+        <li>
+            @player.Name
+        </li>
     }
-</table>
+</ul>
